@@ -2,7 +2,7 @@
 
 This repo features DW Challenge of creating an ISOMORPHIC application using Node.Js, React.Js and Redux.<br/>
 
-<b>INSTRUCTIONS FOR SETUP & LAUNCHING APPLICATION:<b><br/>
+<b>INSTRUCTIONS FOR SETUP & LAUNCHING APPLICATION:</b><br/>
 ★ Download and extract or checkout the repository<br/>
 ★ Use npm install to download all the dependencies<br/>
 ★ Once, installed use the command npm start to launch the application<br/>
@@ -47,13 +47,13 @@ This repo features DW Challenge of creating an ISOMORPHIC application using Node
     </ul>
     </li>
    </ul>
-   ★ The helpers folder contains helper functions used through out the challenge.
+   ★ The helpers folder contains helper functions used through out the challenge.<br/>
     <ul><li>createStore.js - Used for creating the store required for react application</li>
     <li>renderer.js - Used for converting the rendered application to plain html to be sent to the browser</li>
-     </ul>
-   ★ index.js - Express Server that listens for requests at port 3000 
-   ★ package-lock.json - Dependency locking for the application
-   ★ package.json - List of dependencies and scripts used for the challenge
-   ★ webpack.base.js - Common webpack configuration for both client and server
-   ★ webpack.client.js - Client specific webpack configuration
-   ★ webpack.server.js - Server specific webpack configuration
+     </ul><br/>
+   ★ index.js - Express Server that listens for requests at port 3000 <br/>
+   ★ package-lock.json - Dependency locking for the application<br/>
+   ★ package.json - List of dependencies and scripts used for the challenge<br/>
+   ★ webpack.base.js - Common webpack configuration for both client and server<br/>
+   ★ webpack.client.js - Client specific webpack configuration<br/>
+   ★ webpack.server.js - Server specific webpack configuration<br/>
