@@ -6,9 +6,11 @@ import Routes from '../client/Routes';
 import { renderRoutes } from 'react-router-config';
 import { Provider } from 'react-redux';
 import serialize from 'serialize-javascript';
+import {Helmet} from 'react-helmet';
 
 export default (req, store) => {
     const content = renderToString(<Provider store={store}><StaticRouter location={req.path} context={{}}><div>{renderRoutes(Routes)}</div></StaticRouter></Provider>);
-    return `<html><head>
+    const helmet = Helmet.renderStatic();
+    return `<html><head>${helmet.title.toString()}${helmet.meta.toString()}
     <style>html,body{padding:0;margin:0;font-family:DWFutura,sans-serif;}.listItems:hover{ box-shadow: 0 0 17px rgba(33,33,33,.2)}</style></head><body><script>window.INITIAL_STATE = ${serialize(store.getState())}</script><div id="root">${content}</div><script src="bundle.js"></script></body></html>`;
 }

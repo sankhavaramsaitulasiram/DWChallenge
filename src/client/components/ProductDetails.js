@@ -3,7 +3,7 @@ import Header from './Header';
 import {
     Link
 } from "react-router-dom";
-
+import { Helmet } from 'react-helmet';
 const styles = {
     productDetails: {
         width: '100%',
@@ -46,6 +46,15 @@ export default class ProductDetails extends Component {
     constructor(props) {
         super(props);
     }
+
+    renderTags() {
+        return (
+            <Helmet>
+            <title>{`${this.props.location.productDetails.name}`}</title>
+            <meta property="og:title" content="`${this.props.location.productDetails.name}`"/>
+            <meta property="og:description" content="`${this.props.location.productDetails.description}`"/>
+            </Helmet>)
+    }
     render() {
         return (
             <div>
@@ -53,6 +62,7 @@ export default class ProductDetails extends Component {
 			{this.props.location.productDetails ? 
 			(<div style={styles.productDetails}>
 			<div style={styles.productImageContainer}>
+			{this.renderTags()}
 			<img style={styles.productImage} src={this.props.location.productDetails.image}/>
 			</div>
 			<div style={styles.productDetailsContainer}>

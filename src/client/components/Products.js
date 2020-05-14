@@ -4,7 +4,8 @@ import { fetchProducts } from '../actions';
 import {
     Link
 } from "react-router-dom";
-import Header from './Header'
+import Header from './Header';
+import { Helmet } from 'react-helmet';
 
 const styles = {
     box: {
@@ -33,12 +34,10 @@ const styles = {
         alignItems: 'center',
         margin: '2rem',
         textAlign: 'center',
-        border: '1px solid #ccc',
         transition: 'box-shadow .2s'
     },
     productImage: {
         width: '100%',
-        backgroundColor: '#ecf0f1'
     }
 }
 
@@ -80,6 +79,10 @@ class ProductsList extends Component {
     render() {
         return (
             <div>
+            <Helmet>
+            <title>Daniel Wellington</title>
+            <meta property="og:title" content="Daniel Wellington"/>
+            </Helmet>
 		<Header/>
 		<div style={styles.box}>{this.props.products.products ? this.props.products.products.length : 0} Products</div>
 		<ul style={styles.productsBox}>{this.renderProducts()}</ul>
