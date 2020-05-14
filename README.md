@@ -21,6 +21,7 @@ This repo features DW Challenge of creating an ISOMORPHIC application using Node
 ★ Serialize Javascript - To mitigate XSS attacks on server<br/>
 ★ Webpack - webpack both on client and server a module bundler used to create bundles by making use of dependency graph<br/>
 ★ React Helmet - To add Search Engine Optimization tags to the React Components<br/>
+★ React-router-config - To handle routing in isomorphic application<br/>
 
 <b>PROJECT STRUCTURE:</b><br/>
 ★ Server bundle.js is available under build folder<br/>
