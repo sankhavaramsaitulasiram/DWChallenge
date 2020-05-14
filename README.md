@@ -4,11 +4,11 @@ This repo features DW Challenge of creating an ISOMORPHIC application using Node
 
 <b>INSTRUCTIONS FOR SETUP & LAUNCHING APPLICATION:</b><br/>
 ★ Download and extract or checkout the repository<br/>
-★ Use npm install to download all the dependencies<br/>
-★ Once, installed use the command npm start to launch the application<br/>
+★ Use <i>npm install</i> to download all the dependencies<br/>
+★ Once, installed use the command <i>npm start</i> to launch the application<br/>
 ★ By default, application launches at port 3000<br/>
 ★ To access the application, open your favourite browser and navigate to http://localhost:3000<br/>
-★ Application should be up and running<br/> <b>Note: </b>If not please, restart the server (Re issue the command npm start)<br/>
+★ Application should be up and running<br/> <b>Note: </b>If not please, <i>restart the server</i> (Re issue the command npm start)<br/>
 
 <b>TOOLS USED:</b><br/>
 ★ Axios - Thin HTTP Client - used to make http requests to get the product data from PIM<br/>
@@ -47,6 +47,8 @@ This repo features DW Challenge of creating an ISOMORPHIC application using Node
       <li>products.js - Pure function related to the product updates</li>
     </ul>
     </li>
+    <li>client.js - Handles the client side bundle</li>
+    <li>routes.js - Handles the routing in DW Challenge</li>
    </ul>
    ★ The helpers folder contains helper functions used through out the challenge.<br/>
     <ul><li>createStore.js - Used for creating the store required for react application</li>
