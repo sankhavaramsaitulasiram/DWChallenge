@@ -1,6 +1,8 @@
 # DWChallenge
 
-This repo features DW Challenge of creating an ISOMORPHIC application using Node.Js, React.Js and Redux.<br/>
+This repo features DW Challenge of creating an ISOMORPHIC application using Node.Js, React.Js and Redux. It has been the goal of every web developer to make their users feel the least possible latency during their visit to the website. In this process of acquiring blazing fast application, we have arrived at the concept of server side rendering.<br/> 
+
+Here in this repository, the idea is to generate html on the server side and push it to client as html so that users sees possibly no latency during the rendering. In this approach, the performance on server side is also very important. As soon as we receive a request, if there are any dependencies on the API server for data, we process all of that and then perform a server side render, push the data to client browser. There by reducing multiple renders on server side.
 
 <b>INSTRUCTIONS FOR SETUP & LAUNCHING APPLICATION:</b><br/>
 ★ Download and extract or checkout the repository<br/>
