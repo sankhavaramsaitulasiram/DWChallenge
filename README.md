@@ -8,7 +8,7 @@ This repo features DW Challenge of creating an ISOMORPHIC application using Node
 ★ Once, installed use the command npm start to launch the application<br/>
 ★ By default, application launches at port 3000<br/>
 ★ To access the application, open your favourite browser and navigate to http://localhost:3000<br/>
-★ Application should be up and running<br/>
+★ Application should be up and running<br/> <b>Note: </b>If not please, restart the server (Re issue the command npm start)<br/>
 
 <b>TOOLS USED:</b><br/>
 ★ Axios - Thin HTTP Client - used to make http requests to get the product data from PIM<br/>
